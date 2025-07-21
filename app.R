@@ -185,7 +185,7 @@ server <- function(input, output, session) {
   })
   
   output$totalGrupos <- renderValueBox({
-    valueBox(sum(!is.na(filtered_teach_data()$grupo_t)), "Total Encuestas (en rango)", icon = icon("layer-group"), color = "blue")
+    valueBox(sum(!is.na(filtered_teach_data()$grupo_t)), "Total Encuestas (en el rango de 2,376)", icon = icon("layer-group"), color = "blue")
   })
   output$coberturaMuestra <- renderValueBox({
     total_registros <- nrow(filtered_teach_data())
